@@ -39,7 +39,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(28, 11, 43);
+            panel1.BackColor = Color.FromArgb(0, 0, 64);
             panel1.Location = new Point(-6, -5);
             panel1.Name = "panel1";
             panel1.Size = new Size(834, 125);
@@ -48,7 +48,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.bienvenido;
-            pictureBox1.Location = new Point(293, 278);
+            pictureBox1.Location = new Point(302, 278);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(200, 200);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -88,7 +88,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(48, 28, 65);
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(829, 697);
             Controls.Add(label2);
             Controls.Add(label1);

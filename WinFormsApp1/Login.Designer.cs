@@ -92,7 +92,7 @@
             // 
             btnSesion.Font = new Font("Arial Black", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnSesion.ForeColor = Color.FromArgb(128, 128, 255);
-            btnSesion.Location = new Point(475, 479);
+            btnSesion.Location = new Point(443, 480);
             btnSesion.Margin = new Padding(0, 3, 0, 2);
             btnSesion.Name = "btnSesion";
             btnSesion.Size = new Size(266, 33);
