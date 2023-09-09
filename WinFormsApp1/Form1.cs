@@ -1,13 +1,23 @@
 namespace WinFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class FormWelcome : Form
     {
-        public Form1()
+        public FormWelcome()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timerwELCOM(object sender, EventArgs e)
         {
 
         }
