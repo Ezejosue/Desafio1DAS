@@ -30,16 +30,16 @@
         {
             tabControl1 = new TabControl();
             tabInfo1 = new TabPage();
-            tabInfo2 = new TabPage();
-            tabEstadistica = new TabPage();
-            textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
-            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            tabInfo2 = new TabPage();
             pictureBox2 = new PictureBox();
+            textBox2 = new TextBox();
+            tabEstadistica = new TabPage();
             tabControl1.SuspendLayout();
             tabInfo1.SuspendLayout();
-            tabInfo2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            tabInfo2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -67,6 +67,24 @@
             tabInfo1.TabIndex = 0;
             tabInfo1.Text = "tabPage1";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.redes;
+            pictureBox1.Location = new Point(18, 155);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(230, 257);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(295, 71);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(500, 27);
+            textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // tabInfo2
             // 
             tabInfo2.BackColor = Color.Gainsboro;
@@ -79,41 +97,6 @@
             tabInfo2.TabIndex = 1;
             tabInfo2.Text = "tabPage2";
             // 
-            // tabEstadistica
-            // 
-            tabEstadistica.Location = new Point(4, 29);
-            tabEstadistica.Name = "tabEstadistica";
-            tabEstadistica.Padding = new Padding(3);
-            tabEstadistica.Size = new Size(816, 640);
-            tabEstadistica.TabIndex = 2;
-            tabEstadistica.Text = "tabPage3";
-            tabEstadistica.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(295, 71);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(500, 27);
-            textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.usuario1;
-            pictureBox1.Location = new Point(18, 155);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(230, 257);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(288, 115);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(473, 27);
-            textBox2.TabIndex = 0;
-            // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.usuario2;
@@ -123,6 +106,23 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(288, 115);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(473, 27);
+            textBox2.TabIndex = 0;
+            // 
+            // tabEstadistica
+            // 
+            tabEstadistica.Location = new Point(4, 29);
+            tabEstadistica.Name = "tabEstadistica";
+            tabEstadistica.Padding = new Padding(3);
+            tabEstadistica.Size = new Size(816, 640);
+            tabEstadistica.TabIndex = 2;
+            tabEstadistica.Text = "tabPage3";
+            tabEstadistica.UseVisualStyleBackColor = true;
             // 
             // Information
             // 
@@ -137,9 +137,9 @@
             tabControl1.ResumeLayout(false);
             tabInfo1.ResumeLayout(false);
             tabInfo1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tabInfo2.ResumeLayout(false);
             tabInfo2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
