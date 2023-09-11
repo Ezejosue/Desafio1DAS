@@ -34,6 +34,7 @@
             label1 = new Label();
             label2 = new Label();
             timerWelcome = new System.Windows.Forms.Timer(components);
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -81,6 +82,7 @@
             // 
             // timerWelcome
             // 
+            timerWelcome.Enabled = true;
             timerWelcome.Interval = 15000;
             timerWelcome.Tick += timerwELCOM;
             // 
@@ -109,5 +111,6 @@
         private Label label1;
         private Label label2;
         private System.Windows.Forms.Timer timerWelcome;
+        private System.Windows.Forms.Timer timer1;
     }
 }

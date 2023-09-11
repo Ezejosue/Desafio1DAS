@@ -99,6 +99,7 @@
             btnSesion.TabIndex = 7;
             btnSesion.Text = "INICIAR SESION ";
             btnSesion.UseVisualStyleBackColor = true;
+            btnSesion.Click += btnSesion_Click;
             // 
             // FormLogin
             // 

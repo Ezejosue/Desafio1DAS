@@ -19,6 +19,12 @@ namespace WinFormsApp1
 
         private void timerwELCOM(object sender, EventArgs e)
         {
+            timerWelcome.Stop();
+
+            FormLogin formLogin = new FormLogin();
+            formLogin.Show();
+
+            this.Hide();
 
         }
     }
