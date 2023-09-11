@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             labLogin = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUser = new TextBox();
+            txtPassword = new TextBox();
             labUsuario = new Label();
             labClave = new Label();
             btnSesion = new Button();
@@ -48,21 +48,21 @@
             labLogin.TabIndex = 2;
             labLogin.Text = "INICIAR SECCION";
             // 
-            // textBox1
+            // txtUser
             // 
-            textBox1.BackColor = SystemColors.ActiveCaption;
-            textBox1.Location = new Point(408, 322);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(333, 27);
-            textBox1.TabIndex = 3;
+            txtUser.BackColor = SystemColors.ActiveCaption;
+            txtUser.Location = new Point(408, 322);
+            txtUser.Name = "txtUser";
+            txtUser.Size = new Size(333, 27);
+            txtUser.TabIndex = 3;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.BackColor = SystemColors.ActiveCaption;
-            textBox2.Location = new Point(408, 393);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(333, 27);
-            textBox2.TabIndex = 4;
+            txtPassword.BackColor = SystemColors.ActiveCaption;
+            txtPassword.Location = new Point(408, 393);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(333, 27);
+            txtPassword.TabIndex = 4;
             // 
             // labUsuario
             // 
@@ -111,8 +111,8 @@
             Controls.Add(btnSesion);
             Controls.Add(labClave);
             Controls.Add(labUsuario);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUser);
             Controls.Add(labLogin);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormLogin";
@@ -124,8 +124,8 @@
         #endregion
 
         private Label labLogin;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUser;
+        private TextBox txtPassword;
         private Label labUsuario;
         private Label labClave;
         private Button btnSesion;
