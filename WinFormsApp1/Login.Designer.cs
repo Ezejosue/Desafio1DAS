@@ -61,8 +61,10 @@
             txtPassword.BackColor = SystemColors.ActiveCaption;
             txtPassword.Location = new Point(408, 393);
             txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(333, 27);
             txtPassword.TabIndex = 4;
+            txtPassword.UseSystemPasswordChar = true;
             // 
             // labUsuario
             // 

@@ -40,10 +40,11 @@ namespace WinFormsApp1
             if (usuariosRegistrados.ContainsKey(username))
             {
                 User user = usuariosRegistrados[username];
-                
+
                 if (user.Password == password)
                 {
-                    MessageBox.Show("Bienvenido a la plataforma de Streaming "  +  username);
+
+                    MessageBox.Show("Bienvenido a la plataforma de Streaming " + username);
                     Information Information = new Information();
                     Information.Show();
                     this.Hide();
@@ -56,7 +57,7 @@ namespace WinFormsApp1
             }
             else
             {
-                MessageBox.Show("Uusuario no Registrado");
+                MessageBox.Show("Usuario no Registrado");
             }
 
 
