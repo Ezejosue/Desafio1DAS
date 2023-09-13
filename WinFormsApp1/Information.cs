@@ -24,17 +24,52 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            tabControl1.SelectedTab = tabInfo2;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            tabControl1.SelectedTab = tabInfo1;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void Information_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabEstadistica;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabEstadistica;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabInfo2;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabInfo1;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

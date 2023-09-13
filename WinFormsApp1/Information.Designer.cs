@@ -42,9 +42,9 @@
             pictureBox2 = new PictureBox();
             textBox2 = new TextBox();
             tabEstadistica = new TabPage();
-            button7 = new Button();
-            button8 = new Button();
             button9 = new Button();
+            button8 = new Button();
+            button7 = new Button();
             tabControl1.SuspendLayout();
             tabInfo1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -58,10 +58,11 @@
             tabControl1.Controls.Add(tabInfo1);
             tabControl1.Controls.Add(tabInfo2);
             tabControl1.Controls.Add(tabEstadistica);
-            tabControl1.Location = new Point(12, 12);
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(824, 673);
+            tabControl1.Size = new Size(858, 697);
             tabControl1.SizeMode = TabSizeMode.FillToRight;
             tabControl1.TabIndex = 0;
             // 
@@ -76,9 +77,9 @@
             tabInfo1.Location = new Point(4, 29);
             tabInfo1.Name = "tabInfo1";
             tabInfo1.Padding = new Padding(3);
-            tabInfo1.Size = new Size(816, 640);
+            tabInfo1.Size = new Size(850, 664);
             tabInfo1.TabIndex = 0;
-            tabInfo1.Text = "tabPage1";
+            tabInfo1.Text = "Redes";
             // 
             // button3
             // 
@@ -88,6 +89,7 @@
             button3.TabIndex = 4;
             button3.Text = "Cerrar ";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -97,6 +99,7 @@
             button2.TabIndex = 3;
             button2.Text = "Estadística";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -137,9 +140,9 @@
             tabInfo2.Location = new Point(4, 29);
             tabInfo2.Name = "tabInfo2";
             tabInfo2.Padding = new Padding(3);
-            tabInfo2.Size = new Size(816, 640);
+            tabInfo2.Size = new Size(850, 664);
             tabInfo2.TabIndex = 1;
-            tabInfo2.Text = "tabPage2";
+            tabInfo2.Text = "Streaming";
             // 
             // button6
             // 
@@ -159,6 +162,7 @@
             button5.TabIndex = 3;
             button5.Text = "Estadisticas";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -196,9 +200,29 @@
             tabEstadistica.Location = new Point(4, 29);
             tabEstadistica.Name = "tabEstadistica";
             tabEstadistica.Padding = new Padding(3);
-            tabEstadistica.Size = new Size(816, 640);
+            tabEstadistica.Size = new Size(850, 664);
             tabEstadistica.TabIndex = 2;
-            tabEstadistica.Text = "tabPage3";
+            tabEstadistica.Text = "Estadisticas";
+            // 
+            // button9
+            // 
+            button9.Location = new Point(642, 578);
+            button9.Name = "button9";
+            button9.Size = new Size(94, 29);
+            button9.TabIndex = 2;
+            button9.Text = "Cerrar";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(505, 578);
+            button8.Name = "button8";
+            button8.Size = new Size(94, 29);
+            button8.TabIndex = 1;
+            button8.Text = "Redes";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button7
             // 
@@ -208,24 +232,7 @@
             button7.TabIndex = 0;
             button7.Text = "Anterior";
             button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.Location = new Point(505, 578);
-            button8.Name = "button8";
-            button8.Size = new Size(94, 29);
-            button8.TabIndex = 1;
-            button8.Text = "Anterior";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            button9.Location = new Point(642, 578);
-            button9.Name = "button9";
-            button9.Size = new Size(94, 29);
-            button9.TabIndex = 2;
-            button9.Text = "Anterior";
-            button9.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // Information
             // 
@@ -237,6 +244,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Information";
             Text = "Information";
+            Load += Information_Load;
             tabControl1.ResumeLayout(false);
             tabInfo1.ResumeLayout(false);
             tabInfo1.PerformLayout();
