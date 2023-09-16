@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Collections.Specialized.BitVector32;
 
 namespace WinFormsApp1
 {
@@ -23,11 +24,11 @@ namespace WinFormsApp1
 
         private void InitializeRegisteredUser()
         {
-            usuariosRegistrados.Add("Kevin", new User("Kevin", "123", "Redes Sociales"));
-            usuariosRegistrados.Add("Gerardo", new User("Gerardo", "238", "Servicios de streaming"));
-            usuariosRegistrados.Add("Sofia", new User("Sofia", "789", "servicios de streaming"));
-            usuariosRegistrados.Add("Josue", new User("Josue", "987", "Informacion de estadisticas"));
-            usuariosRegistrados.Add("Karens", new User("Karens", "852", "Servicios de Streaming"));
+            usuariosRegistrados.Add("Kevin", new User("Kevin", "123", "Redes"));
+            usuariosRegistrados.Add("Gerardo", new User("Gerardo", "238", "Streaming"));
+            usuariosRegistrados.Add("Sofia", new User("Sofia", "789", "Streaming"));
+            usuariosRegistrados.Add("Josue", new User("Josue", "987", "Estadisticas"));
+            usuariosRegistrados.Add("Karens", new User("Karens", "852", "Streaming"));
 
         }
 
@@ -43,9 +44,9 @@ namespace WinFormsApp1
 
                 if (user.Password == password)
                 {
-
+                    
                     MessageBox.Show("Bienvenido a la plataforma de Streaming " + username);
-                    Information Information = new Information();
+                    Information Information = new Information(user.Theme);
                     Information.Show();
                     this.Hide();
 
