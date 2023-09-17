@@ -18,7 +18,7 @@
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
     <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
     <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing"">Blue</data>
     <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
         <value>[base64 mime encoded serialized .NET Framework object]</value>
     </data>
@@ -16553,7 +16553,7 @@
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAADawAAAQzCAYAAAA12opaAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAABt
-        QgAAbUIBwNTlEgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAP+NSURBVHhe7N0J
+        QQAAbUEBbW3EfwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAP+NSURBVHhe7N0J
         mBxVufDxSsK+KIqKIMJMVSVBJ6nqYRSImapuA6IoF9e4fy5XxX25XhV3ccd9vVzjclFkma5OQERxQUUR
         RSCKCygakunqCWFfZA0Jmfne6jnoUH0SZumu9f97nv8zrMn0OdU9M6l6uwwAAACg0M7Y9AgjGDvMCJrP
         NoLwrUa99Vmj3jxT/voiaa30N2m9/Psb5OMt0n3SP9Vfj0ry79r/3aXS941G66vy8d1GPXyp/Fq+/H/9
@@ -18584,7 +18584,7 @@
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB9AAAAU1CAYAAABLLl9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7s/X+w5XlZ2PveJDBDT/+wrFuQymzpMKD8yKRKcwqtOHKIYMEtqlLS
+        DAAACwwBP0AiyAAA/7JJREFUeF7s/X+w5XlZ2PveJDBDT/+wrFuQymzpMKD8yKRKcwqtOHKIYMEtqlLS
         09KVEcpoFQa4cpOACoODKZMwyQTPOKMp71Fz5HiVIYk/OJUSOScThOCxNIqQ46QcES6JMOO1D+ScIYoh
         YeZUzd3Pd69n7Wc9+/Nde+3unp7uXq8/XvV8vp+1upm1u6eBfu/P9/t/+3+86a8CAAAAAAAAwNYbbgIA
         AAAAAADAthluAgAAAAAAAMC2GW4CAAAAAAAAwLYZbgIAAAAAAADAthluAgAAAAAAAMC2GW4CAAAAAAAA

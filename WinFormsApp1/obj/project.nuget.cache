@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "34+unnt1LpBhr+B78JJHHCTBBz9o760jfUf3JklID5lz6dqUNF4k/1+Z6gx/v4p8VQMkbrE2f68iFMEoFb/J9g==",
+  "dgSpecHash": "JgE9gW9c9ZIwp8bg+Gsv7UD/iAznqCYtzweY+4w7R3kONJ1f5KJFOY25REPn73l4VGFcnnX+VVsp+4DVkOKZtg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\Desafio1DAS\\WinFormsApp1\\WinFormsApp1.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "E:\\Proyectos\\DesafioDas\\Desafio1DAS\\WinFormsApp1\\WinFormsApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\scottplot\\4.1.14\\scottplot.4.1.14.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.drawing.common\\4.6.1\\system.drawing.common.4.6.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "WinFormsApp1 depends on ScottPlot (>= 4.1.0) but ScottPlot 4.1.0 was not found. An approximate best match of ScottPlot 4.1.14 was resolved.",
+      "libraryId": "ScottPlot",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

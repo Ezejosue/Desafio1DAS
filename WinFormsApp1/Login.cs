@@ -27,7 +27,7 @@ namespace WinFormsApp1
             usuariosRegistrados.Add("Kevin", new User("Kevin", "123", "Redes"));
             usuariosRegistrados.Add("Gerardo", new User("Gerardo", "238", "Streaming"));
             usuariosRegistrados.Add("Sofia", new User("Sofia", "789", "Streaming"));
-            usuariosRegistrados.Add("Josue", new User("Josue", "987", "Estadisticas"));
+            usuariosRegistrados.Add("Josue", new User("Josue", "987", "Redes"));
             usuariosRegistrados.Add("Karens", new User("Karens", "852", "Streaming"));
 
         }
@@ -44,7 +44,7 @@ namespace WinFormsApp1
 
                 if (user.Password == password)
                 {
-                    
+
                     MessageBox.Show("Bienvenido a la plataforma de Streaming " + username);
                     Information Information = new Information(user.Theme);
                     Information.Show();
@@ -62,6 +62,11 @@ namespace WinFormsApp1
             }
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
