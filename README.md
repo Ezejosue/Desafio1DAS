@@ -20,7 +20,8 @@ Este proyecto es una aplicación de escritorio desarrollada en Visual Studio uti
 
 - Visual Studio (2022)
 - .Net 6
-
+- Libreria ScottPlot versión 4.1.0 (para instalar ir a la carpeta donde clone el proyecto, abrir la consola en esa dirección y ejecutar: dotnet add package ScottPlot --version 4.1.0)
+  
 ## Instrucciones de Uso
 
 1. Clona el repositorio o descarga el código fuente.
